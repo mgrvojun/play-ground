@@ -15,11 +15,11 @@ public class TestEntity {
     private NameEntity name;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    private AddressEntity adress;
+    private AddressEntity address;
 
-    public TestEntity(Long id, NameEntity name, AddressEntity adress) {
+    public TestEntity(Long id, NameEntity name, AddressEntity address) {
         this.id = id;
         this.name = name;
-        this.adress = adress;
+        this.address = address;
     }
 }

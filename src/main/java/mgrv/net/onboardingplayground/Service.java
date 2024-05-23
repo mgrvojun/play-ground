@@ -48,14 +48,14 @@ public class Service {
             }
             Optional<TestEntity> byId = testRepository.findById(1L);
             byId.ifPresent(e -> {
-                String name = e.getAdress().getName();
+                String name = e.getAddress().getName();
                 if (!name.equals("Test")) {
                     throw new RuntimeException("Test");
                 }
                 System.out.println(name);
             });
             testRepository.findByName(nameEntity).ifPresent(e -> {
-                String name = e.getAdress().getName();
+                String name = e.getAddress().getName();
                 if (!name.equals("Test")) {
                     throw new RuntimeException("Test");
                 }
